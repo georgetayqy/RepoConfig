@@ -39,7 +39,7 @@ If you are on Windows, you may need to install Windows Subsystem Linux 2 in orde
 To run the application, run the following command:
 
 ```shell
-streamlit run main.py
+streamlit run Home.py
 ```
 
 If successful, your browser should open and you will be redirected to the app.

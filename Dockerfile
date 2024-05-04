@@ -16,14 +16,16 @@
 
 FROM python:3.12
 
-EXPOSE 5000  # default port that Streamlit runs on
+# default port that Streamlit runs on
+EXPOSE 9000
 
-RUN apt-get update && apt-get upgrade \
-    apt-get install -y build-essential software-properties-common git
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y build-essential software-properties-common git
 
 WORKDIR /repoconfig
 COPY . /repoconfig
 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["streamlit", "run", "main.py"]
+ENTRYPOINT ["streamlit", "run", "Home.py"]
