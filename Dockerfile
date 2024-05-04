@@ -17,7 +17,7 @@
 FROM python:3.12
 
 # default port that Streamlit runs on
-EXPOSE 9000
+EXPOSE 8501
 
 RUN apt-get update
 RUN apt-get upgrade -y

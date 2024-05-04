@@ -2,3 +2,7 @@
 headless = false
 port = 8501
 maxMessageSize = 4000  # max download size is 4 GB
+
+[browser]
+gatherUsageStats = true
+serverPort = 8501
