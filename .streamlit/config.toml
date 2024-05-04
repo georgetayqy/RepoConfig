@@ -1,5 +1,4 @@
 [server]
-
 headless = false
-port = 9000
+port = 8501
 maxMessageSize = 4000  # max download size is 4 GB
